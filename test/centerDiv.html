@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小盒子在大盒子中居中方法</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		.bigBox {
+			width: 800px;
+			height: 600px;
+			border: solid 1px black;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			/*通过[-webkit,-moz]-box来设置居中*/
+			/*display: -webkit-box;
+			-webkit-box-align: center;*//*垂直居中*/
+			/*-webkit-box-pack: center;*//*水平居中*/
+		}
+		.smallBox {
+			width: 200px;
+			height: 300px;
+			background-color: orange;
+			/*vertical-align: middle;*//*规定子元素相对父元素文档的对齐方式*/
+			margin: 0 auto;/*水平居中，可以和[]-box-align一起使用来设置居中*/
+		}
+	</style>
+</head>
+<body>
+	<div class="bigBox">
+		<div class="smallBox"></div>
+	</div>
+</body>
+</html>
