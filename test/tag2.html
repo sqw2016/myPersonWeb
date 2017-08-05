@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML 标签</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		.red{
+			color: red;
+		}
+	</style>
+	<!-- base href 定义了文档链接的基准 target 定义了默认的打开方式 -->
+	<base href="../" target="_self" />
+</head>
+<body>
+<p>这个页面主要介绍article、 aside、 audio、 source、 b、 base标签的基本用法</p>
+<p class="red">article定义文章：</p>
+<article>
+	商通万界，让所有人给我打工。<br />
+　　周阳意外获得万界商铺系统，交易万千位面。<br />
+　　“我曾举行一次小型拍卖会，来到的皇帝就有一百多位，听说还有两个叫李世民的皇帝。”<br /> 
+　　“我曾让神雕侠侣世界的所有人，帮我养殖菩斯曲蛇，发动海贼世界的所有人，出海帮我寻找恶魔果实<br />
+　　这是周阳获得万界商铺系统，成为史上最强店主的故事。
+	<p class="red">aside定义文章之外的内容，可作为文章的 侧边栏:</p>
+	<aside>
+		《史上最强店主》是在起点中文网首发的一部科幻类小说，作者是南极烈日。小说里面的脑洞都好搞笑， 主角要给人治病，召集各界名医，各个世界朝代的人都可以出现。
+	</aside>
+</article>
+<p class="red">audio定义音频:</p>
+<audio src="audios/horse.mp3" loop="loop" preload="meta" controls="controls" muted="muted"></audio>
+
+<p>source定义音频的资源文件:</p>
+<audio preload="auto" controls="controls" autoplay="autoplay">
+	<source src="audios/horse.mp3" type="audio/mpeg" />
+	<source src="audios/horse.ogg" type="audio/ogg" />
+</audio>
+
+<p class="red">
+	<b>b元素</b>定义粗体文本
+</p>
+
+<p class="red">
+	base target定义了默认的打开方式 <a href="http://www.baidu.com">百度</a>
+</p>
+</body>
+</html>
